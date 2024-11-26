@@ -16,3 +16,4 @@ November 26th 2024
 
 Added Error page, updated maps to show the error page when it presents an error.
 Imported the necesary things to make it work.
+Updated the home page to have more informtaion about the objective of the page.
