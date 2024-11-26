@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Mapa from './components/Mapa';
 import RealTime from './components/RealTime';
+import Error from './components/Error';
 import './App.css'; // Si tienes estilos globales
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/map" element={<Mapa />} />
         <Route path="/timelapse" element={<RealTime />} />
+        <Route path="/error" element={<Error/>} />
         <Route path="*" element={<Navigate to="/" />}/>
       </Routes>
 

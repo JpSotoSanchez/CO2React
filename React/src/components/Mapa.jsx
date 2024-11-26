@@ -12,12 +12,14 @@ import instance from "../api/axios";
 import Overlay from 'ol/Overlay.js';
 import { Popover } from 'bootstrap';
 import {getCenter} from 'ol/extent';
+import { useNavigate } from "react-router-dom";
 
 function Mapa() {
   const [datos, setDatos] = useState([]);
   // var year = 1980;
   const [year, setYear] = useState(Number(1980));
   const [geojsonData, setGeojsonData] = useState(null);
+  const navigate = useNavigate(); // Hook para redirigir.
 
   useEffect(()=>{
     instance.get("/geojson").then((response)=>{
@@ -28,6 +30,7 @@ function Mapa() {
       setDatos(response.data.datos);
     }).catch((error)=>{
       console.error("Full Error Object:", error.toJSON ? error.toJSON() : error);
+      navigate("/Error");
     });
   }, []);
 

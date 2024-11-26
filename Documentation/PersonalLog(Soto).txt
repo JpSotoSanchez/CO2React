@@ -11,3 +11,8 @@ November 19th 2024
 
 Added the second and last graphic to the Timelapse page
 Finished the timelapse page
+
+November 26th 2024
+
+Added Error page, updated maps to show the error page when it presents an error.
+Imported the necesary things to make it work.

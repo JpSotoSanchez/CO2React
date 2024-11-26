@@ -342,7 +342,7 @@
   @media (max-width: 768px) {
     .Objective{
       flex-wrap: wrap;
-      margin: 10% !important;
+      margin: 50% !important;
     }
     .UN{
       padding-top: 3rem;
@@ -367,6 +367,10 @@
     margin-bottom: 50px;
   }
 
+  .parrafo{
+    padding-left: 20px;
+  }
+  
   #custom-cards .py-5{
     padding-top: 0px !important;
     margin-right: 10px;
